@@ -2,15 +2,16 @@ html {
     background-color:white;
 }
 
-head {
-    background-color: white;
-}
-title {
+head 
+  a {
+    text-align: center;
+  }
+  title {
     color:black;
-}
-a {
+  }
+  a {
     font-family:Helvetica;
-}
+  }
 
 body
   h2 {
@@ -20,7 +21,7 @@ body
   p {
     color: black;
     font-family:Helvetica;
-    padding: 30px;
+    text-align: center;
   }
   #p01 {
       color:red;
