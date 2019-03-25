@@ -1,0 +1,48 @@
+html {
+    background-color:white;
+}
+
+head {
+    background-color: white;
+}
+title {
+    color:black;
+}
+a {
+    font-family:Helvetica;
+}
+
+body
+  h2 {
+    color: black;
+    font-family:Helvetica;font-size:300%;text-align:center;
+  }
+  p {
+    color: black;
+    font-family:Helvetica;
+    padding: 30px;
+  }
+  #p01 {
+      color:red;
+  }
+  table{
+      font-family:Helvetica;
+      color:black;
+      border:1px solid black;
+      border-collapse: collapse;
+      padding: 15px;
+      text-align: left;
+      border-spacing: 50px;
+      width: 100%;
+  }
+  td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: #8f8f8f;
+  }
