@@ -1,52 +1,90 @@
 html {
-    background-color:white;
+    background-color:rgb(32, 32, 32);
 }
 
-head 
-  a {
+head
+  p {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica;
     text-align: left;
+    padding-left: 2%;
   }
   title {
     color:black;
-  }
-  a {
     font-family:Helvetica;
   }
-
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica;
+    font-size:300%;
+    text-align: left;
+    padding-left: 2%;
+  }
+  hr {
+    color: gray;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 body
-  h2 {
-    color: black;
-    font-family:Helvetica;font-size:300%;text-align:center;
-  }
   p {
-    color: black;
+    color: rgb(255, 255, 255);
     font-family:Helvetica;
-    text-align: center;
+    margin-left: 2%;
   }
-  #p01 {
-      color:red;
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica;
+    font-size:300%;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  h5 {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica;
+    font-size:150%;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  blockquote {
+    border-left: 10px solid #ccc;
+    color: rgb(160, 160, 160);
+    font-family:Helvetica;
+    font-size:100%;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  ol {
+    color: rgb(255, 255, 255);
+    font-family:Helvetica;
+    margin-left: 2%;
+  }
+  hr {
+    color: gray;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   table{
       font-family:Helvetica;
-      color:black;
-      /*border:1px solid black;*/
+      color:rgb(255, 255, 255);
       border-collapse: collapse;
-      padding: 15px;
-      text-align: left;
+      text-align: center;
       vertical-align: top;
-      border-spacing: 50px;
-      width: 100%;
+      width: 96%;
+      margin-left:2%; 
+      margin-right:2%;
   }
-  td, th {
-    /*border: 1px solid black;*/
-    text-align: left;
+  th {
+    border-bottom: 1px solid rgb(209, 209, 209);
+    text-align: center;
     padding: 15px;
   }
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  tr:nth-child(odd) {
-    background-color: #8f8f8f;
+  td {
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 15px;
   }
   tr:hover {
     background-color: #585858;

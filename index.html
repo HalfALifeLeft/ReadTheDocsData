@@ -4,177 +4,297 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>Data Bot's Documentation</title>
-    <a href="https://discordapp.com/oauth2/authorize?client_id=494001612822675458&scope=bot&permissions=2080763127">Invite
-        Data to your own server!</a>
+    <h1>Data Bot</h1>
+    <hr>
+    <p>Data is an android from Star Trek: The Next Generation, but I absolutely loved the character so I made him into a bot!</p>
 </head>
 
 <body>
+    <h2>Features</h2>
+    <ol>
+        <li>Be your <b>logging</b> and <b>moderation</b> bot, with customizable options for logging channels.</li>
+        <li>Be your <b>General Purpose</b> bot, he can get you every single cute cat on reddit.</li>
+        <li><s>Fulfill your Star Trek dreams of having Data on your bridge crew</s></li>
+        <li><b>BROKEN AS OF 4/26/2019</b> Be your music bot and let you listen to the Star Trek OST all day long.</li>
+    </ol>
+    <hr>
     <h2>Commands</h2>
-    <p>Welcome to the documentation for my bot, Data. Here you will find the documentation and necessary information to
-        use all of his commands! This is a work in progress so it will be updated consistently, and it will look better
-        eventually!</p>
-    <table id="User01">
-        <caption style="font-size:200%;">User Commands</caption>
+    <hr>
+    <p>Data Bot's default prefix is <b>d!</b> but he can also be @mentioned for commands. &lt;&gt; = Necessary, [] = Optional</p>
+    <table>
         <tr>
-            <b><td>Command Name</td></b>
-            <b><td>Info</td></b>
-            <!--<b><td>Usage</td></b>-->
+            <th>Command</th>
+            <th>Syntax</th>
+            <th>Description</th>
+            <th>Developer Notes</th>
         </tr>
         <tr>
+            <td>8-Ball</td>
             <td>d!8ball &lt;question&gt;</td>
             <td>Ask the magic 8ball a question!</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Avatar [@user or username]</td>
-            <td>Get a user's avatar.</td>
+            <td>Avatar</td>
+            <td>d!avatar [@user or username]</td>
+            <td>Display the avatar of a user.</td>
+            <td>You can @mention the user or just type their username, either works!</td>
         </tr>
         <tr>
-            <td>d!Balance [@user]</td>
-            <td>Gets yours or a user's bank balance.</td>
+            <td>Balance</td>
+            <td>d!balance [User]</td>
+            <td>Get a user's balance.</td>
+            <td>See the Dev message about points above!</td>
         </tr>
         <tr>
-            <td>d!Booru &lt;search term&gt;</td>
-            <td>Gets a random image from Safebooru.</td>
+            <td>Ban</td>
+            <td>d!ban &lt;@User&gt; [Reason]</td>
+            <td>Give a user the ban hammer!</td>
+            <td>@mentioning the user is necessary, you cannot type in a username. This is to avoid mis-bans</td>
         </tr>
         <tr>
-            <td>d!Botinvite</td>
-            <td>Get the link to invite Data to your own server!</td>
+            <td>Booru</td>
+            <td>d!booru</td>
+            <td>This searches Safe Booru for whatever you wish to search for!</td>
+            <td><b>WARNING:</b> You may get NSFW content with this.</td>
         </tr>
         <tr>
-            <td>d!Cuddle &lt;@user or user&gt;</td>
-            <td>Cuddle a user</td>
+            <td>Botinvite</td>
+            <td>d!botinvite</td>
+            <td>Invite Data Bot into your own server!</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Daily</td>
-            <td>NON-FUNCTIONAL - Collect your daily reward.</td>
+            <td>Channel</td>
+            <td>d!channel &lt;What To Set&gt; &lt;#channel&gt;</td>
+            <td>Configure a channel easily!</td>
+            <td>You can configure the suggestions and welcome channel with this using <code>suggestions</code> and <code>welcome</code> respectively as the first argument, and a channel as the second!</td>
         </tr>
         <tr>
-            <td>d!Gamble &lt;$ to gamble&gt;</td>
-            <td>NON-FUNCTIONAL - Gamble your li- money away!</td>
+            <td>Cuddle</td>
+            <td>d!cuddle [@user]</td>
+            <td>Cuddle a user.</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Help</td>
-            <td>Get help with command for Data. Basically this but easier to code.</td>
+            <td>Donate</td>
+            <td>d!donate</td>
+            <td>How to donate to the developer of Data Bot!</td>
+            <td>This is in no way necessary for the use of Data Bot, but it would make my day <3</td>
         </tr>
         <tr>
-            <td>d!Hug &lt;@user or user&gt;</td>
-            <td>Hug a user</td>
+            <td>Embed</td>
+            <td>d!embed &lt;Hexcode&gt; &lt;Embed Content&gt;</td>
+            <td>Create a Discord Rich Embed easily using this!</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Info</td>
-            <td>The background info of Data, from Star Trek: The Next Generation</td>
+            <td>Eval</td>
+            <td>d!eval &lt;Code To Eval&gt;</td>
+            <td>Evaluate Code</td>
+            <td>Only I (The Bot's Owner) can use this command, I just wanted it here for reference.</td>
         </tr>
         <tr>
-            <td>d!Invite</td>
-            <td>Get an invite for the server, lasts 24 hours.</td>
+            <td>Gamble</td>
+            <td>d!gamble &lt;#&gt;</td>
+            <td>Gamble your life away by using your hard earned points to test your luck!</td>
+            <td>See the Dev message about points above!</td>
         </tr>
         <tr>
-            <td>d!Issue</td>
-            <td>Found a bug with Data? Report it to my github!</td>
+            <td>Give</td>
+            <td>d!give &lt;@User&gt; &lt;# Points&gt;</td>
+            <td>Give a user points!</td>
+            <td>1. Only the server owner can use this, 2. See the Dev message about points above!</td>
         </tr>
         <tr>
-            <td>d!Kitty</td>
-            <td>Get a random picture of a kitten.</td>
+            <td>Help</td>
+            <td>d!help [Command]</td>
+            <td>Need help figuring out how to use Data Bot and don't want to come here every time? Use this!</td>
+            <td>Using the command argument will show you all possible commands.</td>
         </tr>
         <tr>
-            <td>d!Leaderboard</td>
-            <td>Get the top 10 richest users in the server.</td>
+            <td>Hug</td>
+            <td>d!hug [@User]</td>
+            <td>Hug a user.</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Meme</td>
-            <td>Get a random meme from /r/memes.</td>
+            <td>Info</td>
+            <td>d!info</td>
+            <td>Just a bit of lore about Data's origins. Couldn't resist adding it in :P</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Penis &lt;@users or users&gt;</td>
-            <td>Get the user's penis lengths! 100% accurate!</td>
+            <td>Invite</td>
+            <td>d!invite</td>
+            <td>Get an invite to the server!</td>
+            <td>Requires the <b>CREATE_INSTANT_INVITE</b> permission to use the command.</td>
         </tr>
         <tr>
-            <td>d!Ping</td>
-            <td>Get's the WebSocket's ping, averaged over 5 pings.</td>
+            <td>Issue</td>
+            <td>d!issue</td>
+            <td>Found a bug? Have a suggestion for Data? Use this!</td>
+            <td>This is the best way to report a bug or to make a suggestion, I get notifications anytime an issue or suggestion is posted!</td>
         </tr>
         <tr>
-            <td>d!Serverstats</td>
-            <td>Get the server's stats! How exciting! :o</td>
+            <td>Kick</td>
+            <td>d!kick &lt;@User&gt; [reason]</td>
+            <td>Kick a user out of the server.</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Subreddit &lt;subreddit name&gt;</td>
+            <td>Kitty</td>
+            <td>d!kitty</td>
+            <td>OMG KITTY! SO CUTE!!!1!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Leaderboard</td>
+            <td>d!leaderboard</td>
+            <td>This gets the server points leaderboard.</td>
+            <td>See the Dev message about points above!</td>
+        </tr>
+        <tr>
+            <td>Logs</td>
+            <td>d!logs &lt;Member Logging Channel Name&gt; &lt;Message Logging Channel Name&gt; &lt;Server Logging Channel Name&gt; &lt;Mod Logging Channel Name&gt;</td>
+            <td>Create and configure the logging channels! All in one command!</td>
+            <td>You need to make 4 different channels for logging to use this command, otherwise you must manually configure logging.</td>
+        </tr>
+        <tr>
+            <td>Meme</td>
+            <td>d!meme</td>
+            <td>LOL! Check out this meme!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Mute</td>
+            <td>d!mute &lt;@User&gt;</td>
+            <td>Someone being annoying? Disruptive? Mute them with this!</td>
+            <td>The muted role needs to have been configured before using this.</td>
+        </tr>
+        <tr>
+            <td>Penis</td>
+            <td>d!penis [@user] [@user]...</td>
+            <td>Get the user's penis length! 100% accurate!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Ping</td>
+            <td>d!ping</td>
+            <td>Pong!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Prefix</td>
+            <td>d!prefix [prefix]</td>
+            <td>Configure the prefix!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Purge</td>
+            <td>d!purge &lt;#&gt;</td>
+            <td>Purge up to 100 messages at a time!	</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Remind Me</td>
+            <td>d!remindme &lt;time&gt;&lt;D | H | M | S&gt; &lt;Message&gt;</td>
+            <td>Have something important to do later? Have Data remind you of it!</td>
+            <td>Max time is 7 days, examples of the time are 24h, 45m, 30s.</td>
+        </tr>
+        <tr>
+            <td>Roles</td>
+            <td>d!roles</td>
+            <td>Take a look at all the roles in the server and their IDs!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Rule</td>
+            <td>d!rule &lt;1 => 10&gt; &lt;Rule&gt;</td>
+            <td>Easily configure the rules of the server!</td>
+            <td>1 => 10 correspond to Rule 1, Rule 2, etc.</td>
+        </tr>
+        <tr>
+            <td>Server Stats</td>
+            <td>d!serverstats</td>
+            <td>Get some statistics about the server!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Subreddit</td>
+            <td>d!subreddit &lt;subreddit name&gt;</td>
             <td>Gets a random image from a subreddit of your choosing!</td>
+            <td>N/A</td>
         </tr>
         <tr>
-            <td>d!Suggestion</td>
-            <td>Suggest a server change or whatever you want! That way you can feel like you are included!</td>
+            <td>Suggestion</td>
+            <td>d!suggestion</td>
+            <td>Want to make a suggestion for the server? Use this!</td>
+            <td><b>1.</b> Use the command and then follow the instruction! <b>2.</b> Requires server admins/owner to have set up a suggestions channel.</td>
         </tr>
         <tr>
-            <td>d!Userinfo &lt;@user or user&gt;</td>
-            <td>Get's a user's stats for the server. It was a pain to code, so enjoy it. Please.</td>
+            <td>Unmute</td>
+            <td>d!unmute &lt;@user&gt;</td>
+            <td>Unmute a muted user.	</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>User Info</td>
+            <td>d!userinfo &lt;user&gt;</td>
+            <td>Get some basic information about the user such as their roles, creation date, and server join date!</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>VC Kick</td>
+            <td>d!vckick &lt;@user&gt;</td>
+            <td>Kick an obnoxious user from the voice channel.</td>
+            <td>This creates a channel and moves the user into it, then deletes the channel.</td>
         </tr>
     </table>
-    <table id="Mod01">
-        <caption style="font-size:200%;">Mod Commands</caption>
-        <tr>
-            <td>d!Ban &lt;@user&gt;</td>
-            <td>Ban a user, requires the BAN_MEMBERS permission.</td>
-        </tr>
-        <tr>
-            <td>d!Kick &lt;@user&gt;</td>
-            <td>Kick a user, requires the KICK_MEMBERS permission.</td>
-        </tr>
-        <tr>
-            <td>d!Mute &lt;@user&gt;</td>
-            <td>Mute a user, requires the KICK_MEMBERS permission.</td>
-        </tr>
-        <tr>
-            <td>d!Purge 0 &le; # &le; 100</td>
-            <td>Purges the chat, requires the MANAGE_MESSAGES permission.</td>
-        </tr>
-        <tr>
-            <td>d!Unmute &lt;@user&gt;</td>
-            <td>Unmutes a user if they are muted, requires the KICK_MEMBERS permission.</td>
-        </tr>
-    </table>
-    <table id="Admin01">
-        <caption style="font-size:200%">Admin Commands</caption>
-        <tr>
-            <td>d!Channel &lt;channel name&gt;</td>
-            <td>Create a channel, requires the ADMINISTRATOR permission.</td>
-        </tr>
-        <tr>
-            <td>d!Config &lt;config name&gt; &lt;config argument&gt;</td>
-            <td>Configure the server's configs, requires the ADMINISTRATOR permission.</td>
-        </tr>
-        <tr>
-            <td>d!Embed &lt;hexcode&gt; &lt;embed content !!!MUST BE LESS THAN 1024 CHARACTERS!!!&gt;</td>
-            <td>Creates an embed, requires the ADMINISTRATOR permission.</td>
-        </tr>
-        <tr>
-            <td>d!Logs &lt;Member Logging Channel&gt; &lt;Message Logging Channel&gt; &lt;Server Logging Channel&gt; &lt;Mod Logging Channel&gt;</td>
-            <td>Create and auto configure logging channels, requires the ADMINISTRATOR permission.</td>
-        </tr>
-        <tr>
-            <td>d!Roles</td>
-            <td>See all the roles in the server, in a handy dandy menu. Enjoy it! Please. I worked hard on this.</td>
-        </tr>
-    </table>
+    <h2>Configuration Guide</h2>
+    <hr>
+    <p><b>ALL ITEMS HERE ARE SUBJECT TO CHANGE IN THE NEAR FUTURE</b></p>
+    <br>
+    <p>The possible items to configure are: <b>prefix</b>, <b>mutedRole</b>, <b>memberLogs</b>, <b>messageLogs</b>, <b>serverLogs</b>, <b>modLogs</b>, <b>welcomeChannel</b>, <b>suggestChannel</b>, <b>ruleOne</b>, <b>ruleTwo</b>, <b>ruleThree</b>, <b>ruleFour</b>, <b>ruleFive</b>, <b>ruleSix</b>, <b>ruleSeven</b>, <b>ruleEight</b>, <b>ruleNine</b>, <b>ruleTen</b>.</p>
+    <br>
+
+    <h5>prefix:</h5>
+    <hr>
+    <blockquote>d!config prefix <b>{PREFIX}</b></blockquote>
+    <p>This command will allow you to set a <b>Custom Prefix</b> for Data Bot.</p>
+
+    <h5>mutedRole:</h5>
+    <hr>
+    <blockquote>d!config mutedRole <b>{ROLEID}</b></blockquote>
+    <p>This command will allow you to set the <b>Muted Role</b> to enable the mute and unmute commands.</p>
+
+    <h5>memberLogs:</h5>
+    <hr>
+    <blockquote>d!config memberLogs <b>{#CHANNEL}</b></blockquote>
+    <p>This command will allow you to set the <b>Member Event</b> logging channel.</p>
+
+    <h5>messageLogs:</h5>
+    <hr>
+    <blockquote>d!config messageLogs <b>{#CHANNEL}</b></blockquote>
+    <p>This command will allow you to set the <b>Message Event</b> logging channel.</p>
+    
+    <h5>serverLogs:</h5>
+    <hr>
+    <blockquote>d!config serverLogs <b>{#CHANNEL}</b></blockquote>
+    <p>This command will allow you to set the <b>Server Event</b> logging channel.</p>
+
+    <h5>modLogs:</h5>
+    <hr>
+    <blockquote>d!config modLogs <b>{#CHANNEL}</b></blockquote>
+    <p>This command will allow you to set the <b>Mod Event</b> logging channel.</p>
+
+
+    <!--
+    <h5>item1:</h5>
+    <hr>
+    <blockquote>d!config item1 <b>{}</b></blockquote>
+    <p></p>
+    -->
 </body>
 
 </html>
-
-<!--
-
-  channel - admin
-  config - admin
-  embed - admin
-  logs - admin
-  roles - admin
-
-  emily - hidden
-  kili - hidden
-  maxyhug - hidden
-  role - hidden (to be configured)
-  sendmessage - hidden
-
-  eval - bot owner
-  give - bot owner
-  reload - botowner
-
--->
