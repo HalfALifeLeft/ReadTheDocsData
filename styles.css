@@ -1,3 +1,8 @@
+@font-face {
+  font-family: TNG;
+  src: url(./Fonts/TNG_Title.ttf)
+}
+
 html {
   background-color: rgb(32, 32, 32);
 }
@@ -20,6 +25,14 @@ head
   transform: translate(-50%, -50%);
 }
 
+#Title1 {
+  font-family: TNG;
+}
+
+#Desc1 {
+  font-family: TNG;
+}
+
 .centeredText1 {
   white-space: nowrap;
   position: absolute;
@@ -32,7 +45,7 @@ head
   white-space: nowrap;
   position: absolute;
   top: 53%;
-  left: 57%;
+  left: 63%;
   transform: translate(-50%, -50%);
 }
 
