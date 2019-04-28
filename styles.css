@@ -2,7 +2,41 @@ html {
   background-color: rgb(32, 32, 32);
 }
 
-head p {
+head 
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centeredImg {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredText1 {
+  white-space: nowrap;
+  position: absolute;
+  top: 47%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredText2 {
+  white-space: nowrap;
+  position: absolute;
+  top: 53%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+
+p {
   color: rgb(255, 255, 255);
   font-family: Helvetica;
   text-align: left;
@@ -29,7 +63,7 @@ hr {
 }
 
 #Navbar {
-  position: fixed;
+  position: top;
   top: 0;
   width: 100%;
   margin: 0;
@@ -40,14 +74,12 @@ hr {
 
 #Home,
 #Commands,
-#Contact,
 #ConfigGuide {
   float: left;
 }
 
 #Home a,
 #Commands a,
-#Contact a,
 #ConfigGuide a,
 #Invite a {
   display: block;
@@ -60,7 +92,6 @@ hr {
 
 #Home a:hover,
 #Commands a:hover,
-#Contact a:hover,
 #ConfigGuide a:hover,
 #Invite a:hover {
   background-color: rgb(221, 221, 221);
@@ -69,7 +100,6 @@ hr {
 
 #Home a.active,
 #Commands a.active,
-#Contact a.active,
 #ConfigGuide a.active,
 #Invite a.active {
   background-color: rgb(187, 187, 187);
@@ -137,9 +167,9 @@ hr {
   border-collapse: collapse;
   text-align: center;
   vertical-align: top;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #User {
@@ -164,20 +194,29 @@ hr {
 }
 
 #UserCommands {
+  width: 15%;
   text-align: center;
-  padding: 15px;
+  vertical-align: top;
   border-bottom: 0px;
+}
+
+#UserComms {
+  text-align: left;
 }
 
 #ModCommands {
   text-align: center;
-  padding: 15px;
+  vertical-align: top;
   border-bottom: 0px;
+}
+
+#ModComms {
+  text-align: left;
 }
 
 #ConfigCommands {
   text-align: center;
-  padding: 15px;
+  vertical-align: top;
   border-bottom: 0px;
 }
 
@@ -214,6 +253,12 @@ td {
 
 tr:hover {
   background-color: #585858;
+}
+
+a {
+  color: rgb(242, 242, 242);
+  text-decoration: none;
+  font-family: Helvetica;
 }
 
 body {
